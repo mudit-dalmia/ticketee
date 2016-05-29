@@ -9,8 +9,8 @@ RSpec.feature "Users can edit existing projects" do
     click_link "Sublime Text 3"
     click_link "Edit Project"
     fill_in "Name", with: "Sublime Text 4 beta"
-    click_buttton "Update project"
+    click_button "Update Project"
     expect(page).to have_content "Project has been updated"
-    expect(page).to have_content "Subline Text 4 beta"
+    expect(page).to have_content "Sublime Text 4 beta"
   end
 end
